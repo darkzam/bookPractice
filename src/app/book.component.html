@@ -1,0 +1,30 @@
+
+
+
+<div class="ui grid">
+	<div class="ui one wide column"></div>
+	<div class="ui six wide column">
+		<div class="ui row"></div>
+		<table class="ui celled table"
+		*ngIf="books.length>0">
+		<thead>
+			<tr>
+        <th> Id</th>
+				<th> Author</th>
+				<th>Title</th>
+				<th>PageNum</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let book of books; let i = index">
+				<td>{{i}}</td>
+				<td>{{book.title}}</td>
+				<td>{{book.author}}</td>
+				<td>{{book.pageNum}}</td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+
+</div>
